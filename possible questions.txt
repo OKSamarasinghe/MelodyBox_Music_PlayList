@@ -1,0 +1,60 @@
+Sure, here are some possible questions that might be asked during your viva, along with suggested answers:
+
+### General Questions About the Project
+
+1. *Can you explain the overall functionality of your application?*
+   - *Answer*: My application is a music playlist manager. It allows users to add, delete, display, sort, and play songs. The playlist is managed using a singly linked list data structure. Each song has attributes like name, artist, and duration.
+
+2. *Why did you choose a singly linked list for this project?*
+   - *Answer*: I chose a singly linked list because it efficiently handles dynamic data, allowing easy insertion and deletion of songs at any position in the list. This flexibility is suitable for managing a playlist where songs can frequently change.
+
+3. *What sorting algorithm did you implement and why?*
+   - *Answer*: I implemented the bubble sort algorithm to sort the playlist by song names. Bubble sort is simple and easy to implement, which makes it suitable for demonstrating basic sorting techniques within the scope of this project.
+
+### Questions About Data Structures
+
+4. *How does your linked list handle memory management?*
+   - *Answer*: Each Node and Song is dynamically allocated using new. The destructor for the LinkedList class traverses the list and deletes each node to free the allocated memory, preventing memory leaks.
+
+5. *What are the advantages and disadvantages of using a singly linked list?*
+   - *Answer*: Advantages include dynamic size, efficient insertion and deletion operations. Disadvantages include linear time complexity for accessing elements and additional memory overhead for storing pointers.
+
+### Questions About Code and Implementation
+
+6. *Can you explain the addSong function?*
+   - *Answer*: The addSong function creates a new Node with the given song and inserts it at the beginning of the linked list. This is done by setting the new node's next pointer to the current head of the list and then updating the head to the new node.
+
+7. *How does the deleteSong function work?*
+   - *Answer*: The deleteSong function searches for a song by name. It keeps track of the current and previous nodes while traversing the list. If the song is found, it adjusts the next pointer of the previous node to bypass the node to be deleted, then deletes the target node.
+
+8. *Describe how the sortPlaylist function works.*
+   - *Answer*: The sortPlaylist function uses bubble sort to arrange the songs in alphabetical order by their names. It repeatedly traverses the list, swapping adjacent nodes if they are out of order, until no more swaps are needed.
+
+### Questions About Program Execution and Features
+
+9. *How do you handle invalid user inputs in your application?*
+   - *Answer*: I use input validation to ensure users enter valid data. For menu choices, I check if the input is numeric. If not, I prompt the user to enter a valid number. Additionally, for critical inputs, I allow users to enter -99 to return to the main menu.
+
+10. *Can you demonstrate how to add a new song to the playlist?*
+    - *Answer*: [Here, you would run the application, navigate to the "Add Song" option in the menu, and input details for a new song.]
+
+11. *What happens if you try to delete a song that doesn't exist in the playlist?*
+    - *Answer*: The application searches the list for the song name. If the song is not found, it outputs a message indicating that the song was not found and no deletion occurs.
+
+### Conceptual Questions
+
+12. *What is the time complexity of adding and deleting a song in your linked list?*
+    - *Answer*: Adding a song at the beginning of the list has a time complexity of O(1). Deleting a song requires searching for it, which has a time complexity of O(n) in the worst case, where n is the number of songs in the list.
+
+13. *Why is bubble sort not efficient for large datasets?*
+    - *Answer*: Bubble sort has a time complexity of O(n^2) because it repeatedly traverses the list and compares adjacent elements. For large datasets, this results in a high number of comparisons and swaps, making it inefficient compared to algorithms like quicksort or mergesort.
+
+### Advanced Questions
+
+14. *How would you improve the sorting functionality for larger playlists?*
+    - *Answer*: To improve sorting for larger playlists, I would implement a more efficient algorithm like quicksort or mergesort, which have average time complexities of O(n log n).
+
+15. *If you were to extend this project, what additional features would you consider implementing?*
+    - *Answer*: I would consider adding features like saving the playlist to a file, loading a playlist from a file, and allowing more complex searches (e.g., by artist or duration). Additionally, implementing a GUI for better user interaction and experience would be beneficial.
+
+These questions and answers should help you prepare for your viva. Be sure to also review your code thoroughly and practice explaining each part to ensure you can answer questions confidently.

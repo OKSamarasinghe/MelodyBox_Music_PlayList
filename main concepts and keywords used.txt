@@ -1,0 +1,147 @@
+main concepts and keywords used in your project with their explanations, uses, advantages, and disadvantages.
+
+### Linked List
+
+*What is a Linked List?*
+A linked list is a linear data structure consisting of nodes. Each node contains two elements: the data and a reference (or pointer) to the next node in the sequence.
+
+*Why use it?*
+Linked lists are used when you need efficient insertions and deletions of elements, especially in dynamic scenarios where the size of the list is constantly changing.
+
+*Advantages:*
+- Dynamic size: Can grow or shrink as needed.
+- Efficient insertions and deletions: Adding or removing elements doesn't require shifting elements as in an array.
+
+*Disadvantages:*
+- Memory usage: Requires extra memory for storing pointers.
+- Sequential access: Slower access time compared to arrays since elements are not stored contiguously.
+
+### Singly Linked List
+
+*What is a Singly Linked List?*
+A singly linked list is a type of linked list where each node points to the next node in the sequence, and the last node points to null.
+
+*Why use it?*
+It is simpler and uses less memory compared to doubly or circular linked lists, making it suitable for scenarios where only forward traversal is needed.
+
+*Advantages:*
+- Simple to implement.
+- Requires less memory than doubly linked lists.
+
+*Disadvantages:*
+- Cannot traverse backwards.
+- Linear time complexity for accessing elements.
+
+### Node
+
+*What is a Node?*
+A node is a fundamental part of a linked list. It contains the data and a pointer/reference to the next node in the list.
+
+*Why use it?*
+Nodes are the building blocks of a linked list, enabling the dynamic creation and linkage of elements.
+
+*Advantages:*
+- Modular design allows for flexible list construction.
+- Simplifies the process of adding and removing elements.
+
+*Disadvantages:*
+- Overhead due to the additional pointer/reference.
+- Requires careful memory management to avoid leaks.
+
+### Bubble Sort
+
+*What is Bubble Sort?*
+Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process is repeated until the list is sorted.
+
+*Why use it?*
+Bubble sort is easy to understand and implement, making it useful for educational purposes and small datasets where simplicity is preferred over efficiency.
+
+*Advantages:*
+- Simple to implement and understand.
+- Does not require additional memory (in-place sorting).
+
+*Disadvantages:*
+- Inefficient for large datasets with a time complexity of O(n^2).
+- Performs poorly compared to more advanced sorting algorithms.
+
+### Destructor
+
+*What is a Destructor?*
+A destructor is a special member function of a class that is executed when an object of that class is destroyed. It is used to free resources that the object may have acquired during its lifetime.
+
+*Why use it?*
+Destructors are used to release memory and other resources, ensuring efficient memory management and avoiding memory leaks.
+
+*Advantages:*
+- Automatically cleans up resources when an object goes out of scope.
+- Prevents memory leaks by ensuring dynamic memory is released.
+
+*Disadvantages:*
+- Must be carefully implemented to correctly release all resources.
+- Can introduce bugs if not properly managed.
+
+### Dynamic Memory Allocation
+
+*What is Dynamic Memory Allocation?*
+Dynamic memory allocation refers to the process of allocating memory during the runtime of a program using operators like new and delete in C++.
+
+*Why use it?*
+It allows for flexible memory usage, enabling the allocation of memory as needed during the execution of a program.
+
+*Advantages:*
+- Efficient use of memory by allocating only what is needed.
+- Can handle variable size data structures like linked lists.
+
+*Disadvantages:*
+- Requires careful management to avoid memory leaks and fragmentation.
+- More complex than static memory allocation.
+
+### Main Function
+
+*What is the Main Function?*
+The main function is the entry point of a C++ program. It is where the program starts execution.
+
+*Why use it?*
+Every C++ program must have a main function as it defines the starting point of execution.
+
+*Advantages:*
+- Centralized entry point for the program.
+- Facilitates the control flow of the program.
+
+*Disadvantages:*
+- Limited to one main function per program.
+- Requires careful structuring to manage the program flow effectively.
+
+### Input Validation
+
+*What is Input Validation?*
+Input validation is the process of ensuring that a program operates on clean, correct, and useful data by checking inputs against a set of criteria or rules.
+
+*Why use it?*
+To prevent invalid data from causing errors or unexpected behavior in the program.
+
+*Advantages:*
+- Enhances program reliability and security.
+- Prevents errors and exceptions caused by invalid inputs.
+
+*Disadvantages:*
+- Adds additional code and complexity to handle various input scenarios.
+- Can impact performance if not implemented efficiently.
+
+### Command-Line Interface (CLI)
+
+*What is a Command-Line Interface (CLI)?*
+A CLI is a user interface that allows users to interact with a program by typing commands into a console or terminal.
+
+*Why use it?*
+CLIs are simple to implement and use minimal system resources. They are suitable for tasks that do not require a graphical interface.
+
+*Advantages:*
+- Lightweight and fast.
+- Suitable for scripting and automation.
+
+*Disadvantages:*
+- Less user-friendly compared to graphical user interfaces (GUIs).
+- Steeper learning curve for users unfamiliar with command-line commands.
+
+These explanations should help you prepare for your viva by understanding the key concepts and being able to articulate their uses, advantages, and disadvantages.
